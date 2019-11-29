@@ -14,12 +14,8 @@
             background: green;
         }
 
-        .content {
-            overflow: auto;
-        }
-
         /*方案1*/
-        /* .content1 .main {
+        .content1 .main {
             width: 70%;
             height: 100px;
             float: right;
@@ -28,13 +24,13 @@
             width: 30%;
             height: 100px;
             float: left;
-        } */
+        }
 
         /*方案2*/
         .content2 {
             position: relative;
-            /* height: 100px; */
-            overflow: auto;
+            height: 100px;
+            /* overflow: hidden; */
         }
         .content2 .main {
             position: absolute;
@@ -52,47 +48,41 @@
         /*方案3*/
         .content3 {
             display: flex;
-            /* flex-direction: row-reverse; */
         }
         .content3 .main {
-            /* align-content: flex-end; */
             flex-basis: 70%;
-            /* order: 1; */
             height: 100px;
         }
         .content3 .slider {
-            /* align-content: flex-start; */
             flex-basis: 30%;
             height: 100px;
-            /* order: 0; */
         }
 
         /*方案4*/
         .content4 {
             /* letter-spacing: -10px; */
-            /* font-size: 0; */
-        }
-        /* .content4 .main {
-            width: 70%;
-            height: 100px;
-            margin-left: 30%;
-            margin-right: -100%;
-            display: inline-block;
+            font-size: 0;
         }
         .content4 .slider {
             width: 30%;
             height: 100px;
             display: inline-block;
-            margin-right: -100%;
-        } */
+            font-size: 16px;
+        }
+        .content4 .main {
+            width: 70%;
+            height: 100px;
+            display: inline-block;
+            font-size: 16px;
+        }
     </style>
 
     <body>
-        <!-- 1、方案1使用的float布局
-        <div class="content1 content">
+        1、方案1使用的float布局
+        <div class="content1">
             <div class="main">main</div>
             <div class="slider">slider</div>
-        </div> -->
+        </div>
 
         2、方案2使用absolute布局
         <div class="content2">
@@ -106,9 +96,10 @@
             <div class="main">main</div>
         </div>
 
-        <!--4、方案4使用inline-block布局
+        4、方案4使用inline-block布局
         <div class="content4">
-            <div class="main">main</div><div class="slider">slider</div>
-        </div> -->
+            <div class="slider">slider</div>
+            <div class="main">main</div>
+        </div>
     </body>
 </html>
