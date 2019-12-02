@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .slider {
+        background: green;
+    }
+    .main {
+        background: red;
+    }
+    /*方案1*/
+    .content1 {}
+    .content1 .slider {
+        width:100px;
+        height: 100px;
+        float: right;
+    }
+    .content1 .main {
+        height: 100px;
+        margin-right: 100px;
+    }
+
+    /*方案2*/
+    .content2 {
+        height:100px;
+    }
+    .content2 .main {
+        position: absolute;
+        height: 100px;
+        right: 100px;
+        left: 0;
+    }
+    .content2 .slider {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        right: 0;
+    }
+
+    /*方案3*/
+    .content3 {
+        display: flex;
+    }
+    .content3 .main {
+        flex: 1;
+        height: 100px;
+    }
+    .content3 .slider {
+        flex: 0 0 100px;
+        height: 100px;
+    }
+
+
+    /*方案4*/
+    .content4 {
+    }
+    .content4 .main {
+        overflow: hidden;
+        height: 100px;
+    }
+    .content4 .slider {
+        width:100px;
+        height: 100px;
+        float: right;
+
+    }
+</style>
+<body>
+
+    1、方案1使用float布局
+    <div class="content1">
+
+        <div class="main"></div>
+        <div class="slider"></div>
+
+    </div>
+    <br>
+    2、方案2使用绝对定位布局
+    <div class="content2">
+        <div class="main"></div>
+        <div class="slider"></div>
+    </div>
+
+    3、方案3使用flex布局
+    <div class="content3">
+        <div class="main"></div>
+        <div class="slider"></div>
+    </div>
+
+    4、方案4使用overflow布局
+    <div class="content4">
+            <div class="slider"></div>
+
+        <div class="main"></div>
+    </div>
+</body>
+</html>
