@@ -27,6 +27,8 @@
       }
       .item2 {
         float: right;
+        color: #ffffff;
+        margin-right: 3px;
       }
       .banner {
         height: 200px;
@@ -36,7 +38,6 @@
       }
       .page {
         width: 960px;
-        border: 1px solid #ffffff;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
@@ -75,6 +76,11 @@
         border: 1px solid #ececec;
         border-bottom: 1px solid #ffffff;
         border-radius: 20px 20px 0 0;
+        cursor: pointer;
+      }
+      .tab .card span:nth-child(2),
+      .tab .card span:nth-child(3) {
+        background: #eeeeee;
       }
       .content {
         display: flex;
@@ -85,23 +91,22 @@
         width: 960px;
         display: flex;
         flex-wrap: wrap;
-        /* justify-content: space-between; */
+        justify-content: space-between;
       }
       .content1 {
         height: 100px;
         padding: 30px 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
+        line-height: 100px;
         border: 1px solid #ececec;
         margin: 5px;
+        flex: 1;
       }
       .footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background: #666666;
         height: 50px;
+        line-height: 50px;
+        text-align: center;
       }
       .footer span {
         color: #ffffff;
@@ -112,7 +117,9 @@
     <div class="head">
       <div class="logo">
         <span class="item1">logo</span>
-        <span class="item2">Github</span>
+        <a href="#" class="item2">Github</a>
+        <a href="#" class="item2">Register</a>
+        <a href="#" class="item2">Login</a>
       </div>
     </div>
     <div class="banner">
@@ -134,10 +141,14 @@
       <div class="main">
         <div class="content1">this is content 1</div>
         <div class="content1">Maybecontent 2</div>
-        <div class="content1">content 3</div>
-        <div class="content1">content 4</div>
-        <div class="content1">content 5</div>
-        <div class="content1">content 6</div>
+        <div class="content1">content3</div>
+        <div class="content1">content4</div>
+        <div class="content1">content5</div>
+        <div class="content1">content6</div>
+        <div class="content1">content7</div>
+        <div class="content1">content8</div>
+        <div class="content1">content9</div>
+        <div class="content1">content10</div>
       </div>
     </div>
     <div class="footer">
