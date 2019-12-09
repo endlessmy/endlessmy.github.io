@@ -1,9 +1,0 @@
-.head {
-  background: black;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-}
-.head .logo {
-  width: 960px;
-}
