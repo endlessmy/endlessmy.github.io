@@ -84,10 +84,13 @@ main {
 }
 .content-item {
     flex: 1;
-    margin: 12px 6px 0;
+    margin: 12px 6px 0 0;
     padding: 80px;
     border: 1px solid;
     text-align: center;
+}
+.content-item:last-of-type {
+    margin-right: 0;
 }
 footer {
     margin-top: 24px;
