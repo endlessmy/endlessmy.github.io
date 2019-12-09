@@ -1,0 +1,97 @@
+html,body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background-color: black;
+}
+header > div {
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+    height: 50px;
+}
+.logo {
+    float: left;
+    width: 200px;
+    color: white;
+    line-height: 50px;
+}
+.head__nav { 
+    float: right;
+}
+.head__nav-item {
+    padding: 0 6px;
+    text-decoration: underline;
+    color: white;
+}
+.banner {
+    background-color: greenyellow;
+    height: 150px;
+}
+.carousel {
+    position: relative;
+}
+.carousel__container {
+
+}
+.carousel__indicator {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.carousel__button {
+    background: white;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.carousel__button--active {
+    padding-top: 16px;
+}
+nav {
+    margin-top: 24px;
+    border-bottom: 1px solid #ccc;
+}
+nav > div {
+    position: relative;
+    top: 1px;
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+}
+.nav__item {
+    float: left;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 16px 16px 0 0 ;
+    background: rgb(238, 238, 238);
+    color: black;
+}
+.nav__item--active {
+    background: white;
+    border-bottom-color: white;
+}
+main {
+    width: 960px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+}
+.content-item {
+    flex: 1;
+    margin: 12px 6px 0;
+    padding: 80px;
+    border: 1px solid;
+    text-align: center;
+}
+footer {
+    margin-top: 24px;
+    height: 50px;
+    background: #ccc;
+    text-align: center;
+}
