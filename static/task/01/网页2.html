@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        padding: 0;
+        margin: 0;
+      }
+      header {
+        height: 50px;
+        line-height: 50px;
+        background: #000000;
+        color: #ffffff;
+      }
+      header > div {
+        width: 960px;
+        margin: 0 auto;
+      }
+      header .logo {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      header .nav {
+        float: right;
+        margin-top: -10px;
+      }
+      header .nav a {
+        color: #ffffff;
+        margin-right: 5px;
+      }
+      .banner {
+        height: 200px;
+        background: #66bb33;
+      }
+      .banner .center {
+        width: 960px;
+        height: 200px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .banner .center .page {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+      .banner .center .page a {
+        display: inline-block;
+        padding: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+        background: #b2dd99;
+        border: 1px solid #485e39;
+        margin-right: 5px;
+        text-decoration: none;
+      }
+      .banner .center .page .page-active {
+        padding-top: 20px;
+        background: #e0f1d6;
+      }
+      .tab {
+        /* height: 50px; */
+        margin-top: 20px;
+        border-bottom: 1px solid #ececec;
+      }
+      .tab .card {
+        width: 960px;
+        margin: 0 auto;
+        position: relative;
+        top: 1px;
+        overflow: auto;
+      }
+      .tab .card a {
+        padding: 15px;
+        float: left;
+        background: #eeeeee;
+        border: 1px solid #eeeeee;
+        border-radius: 15px 15px 0 0;
+        cursor: pointer;
+      }
+      .tab .card .tab-active {
+        background: #ffffff;
+        border-bottom: 1px solid #ffffff;
+      }
+      main {
+        width: 960px;
+        margin: 0 auto;
+      }
+      main .content {
+        display: flex;
+      }
+      main .content .row {
+        flex: 1;
+        padding: 80px;
+        margin: 10px 5px 0 0;
+        border: 1px solid #eeeeee;
+      }
+      footer {
+        background: #666666;
+        height: 50px;
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="#" class="logo">logo</a>
+        <nav class="nav">
+          <a href="#">Github</a>
+          <a href="#">Register</a>
+          <a href="#">Login</a>
+        </nav>
+      </div>
+    </header>
+    <div class="banner">
+      <div class="center">
+        <div class="page">
+          <a href="#">1</a>
+          <a href="#" class="page-active">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+        </div>
+      </div>
+    </div>
+    <div class="tab">
+      <div class="card">
+        <a class="tab-active">HOME</a>
+        <a>PROFILE</a>
+        <a>ABOUT</a>
+      </div>
+    </div>
+    <main>
+      <div class="content">
+        <div class="row">
+          content1
+        </div>
+        <div class="row">
+          content1
+        </div>
+        <div class="row">
+          content1
+        </div>
+      </div>
+      <div class="content">
+        <div class="row">
+          content1
+        </div>
+        <div class="row">
+          content1
+        </div>
+        <div class="row">
+          content1
+        </div>
+        <div class="row">
+          content1
+        </div>
+      </div>
+      <div class="content">
+        <div class="row">
+          content1
+        </div>
+        <div class="row">
+          content1
+        </div>
+        <div class="row">
+          content1
+        </div>
+      </div>
+    </main>
+    <footer>@ 2018 ife.baidu.com</footer>
+  </body>
+</html>
