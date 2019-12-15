@@ -4,17 +4,19 @@ html {
   padding: 0;
 }
 header {
-  height: 600px;
-  border: 1px solid red;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: #ffffff;
+  background-image: url("image/background-top.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 header > div {
   height: 500px;
   width: 960px;
-  border: 1px solid #000000;
 }
 header > div > p {
   padding: 50px 65px;
@@ -22,7 +24,6 @@ header > div > p {
 header > div > .mail {
   width: 960px;
   height: 200px;
-  border: 1px solid blue;
 }
 header > div > .mail > .send {
   display: flex;
@@ -34,10 +35,17 @@ header > div > .mail > .send > input {
   height: 40px;
   margin-right: 20px;
   outline: none;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 1);
+  opacity: 0.2;
+  color: #ffffff;
 }
 header > div > .mail > .send > button {
   width: 100px;
   height: 40px;
+}
+.main .main-p {
+  opacity: 0.8;
 }
 
 main {
