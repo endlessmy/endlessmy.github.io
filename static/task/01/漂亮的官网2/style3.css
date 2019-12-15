@@ -2,6 +2,7 @@ body,
 html {
   margin: 0;
   padding: 0;
+  font-family: Montserrat;
 }
 header {
   height: 800px;
@@ -24,6 +25,12 @@ header > div > p {
 header > div > .mail {
   width: 960px;
   height: 200px;
+  border: 1px solid #eeeeee;
+  border-radius: 2px;
+  color: #ffffff;
+}
+header > div > .mail p:first-child {
+  opacity: 1;
 }
 header > div > .mail > .send {
   display: flex;
@@ -83,7 +90,10 @@ main .mobile > img {
   margin: 20px 20px 0 0;
 }
 main .mobile > .info > p {
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 200;
+  color: rgba(20, 20, 20, 1);
+  opacity: 0.7;
 }
 
 .file {
@@ -109,7 +119,7 @@ main .mobile > .info > p {
   width: 367px;
   font-size: 28px;
   padding: 20px 20px 0 0;
-  color:#ffffff;
+  color: #ffffff;
 }
 .file-left .second {
   width: 367px;
@@ -117,21 +127,20 @@ main .mobile > .info > p {
   line-height: 24px;
   color: #ffffff;
   padding-top: 15px;
-
 }
 .file-left button {
   padding: 15px 15px;
   margin-top: 20px;
   outline: none;
   border: none;
-  border-radius:2px;
+  border-radius: 2px;
 }
 .file-left .btn-border {
-  border:1px solid rgba(255,255,255,1);
-  opacity:0.3;
+  border: 1px solid rgba(255, 255, 255, 1);
+  opacity: 0.3;
   margin-left: 20px;
   background: none;
-  color:rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
 }
 .file-right {
   flex: 1;
@@ -169,16 +178,15 @@ main .mobile > .info > p {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .file-point .scare .scare-top1 {
-  background: #6C48CA;
+  background: #6c48ca;
 }
 .file-point .scare .scare-top2 {
-  background: #1ABAD3;
+  background: #1abad3;
 }
 .file-point .scare .scare-top3 {
-  background: #2C9DF9;
+  background: #2c9df9;
 }
 .file-point .scare .scare-center {
   text-align: left;
@@ -187,7 +195,6 @@ main .mobile > .info > p {
 .file-point .scare .scare-center span {
   font-size: 12px;
 }
-
 
 .hero {
   display: flex;
@@ -210,8 +217,12 @@ main .mobile > .info > p {
   margin: 30px;
   height: 300px;
 }
-.hero-scare > div > p:first-child {
-  color: #141414;
+.hero-scare .second {
+  font-size: 12px;
+  font-weight: 200;
+  color: rgba(20, 20, 20, 1);
+  line-height: 26px;
+  opacity: 0.7;
 }
 
 .leaf {
@@ -245,6 +256,18 @@ main .mobile > .info > p {
 .leaf-right {
   flex: 1;
 }
+.leaf-right p:first-child {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+}
+.leaf-right .second {
+  font-weight: 200;
+  color: rgba(20, 20, 20, 1);
+  line-height: 24px;
+  opacity: 0.7;
+  font-size: 12px;
+}
 .leaf1 {
   margin-right: 100px;
 }
@@ -252,34 +275,178 @@ main .mobile > .info > p {
 .people {
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid #ebebeb;
 }
 .people .people-center {
-  width:840px;
-  height: 1084px;
-  border: 1px solid red;
+  width: 840px;
+  height: 900px;
   text-align: center;
 }
 .people .people-center > p:first-child {
   font-size: 32px;
   padding-top: 50px;
 }
-.people .people-center > p:nth-child(2){
+.people .people-center > p:nth-child(2) {
   padding: 0 100px;
-  font-size:18px;
-  font-family:Montserrat;
-  font-weight:200;
-  color:rgba(20,20,20,1);
-  line-height:28px;
-  opacity:0.7;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 200;
+  color: rgba(20, 20, 20, 1);
+  line-height: 28px;
+  opacity: 0.7;
 }
 .people .people-main {
   display: flex;
   justify-content: space-between;
 }
-.people-center .people-main img:hover {
-  background:rgba(20,20,20,1);
-  opacity:0.65;
-}
 .people .people-center .people1 {
   margin-bottom: 25px;
+}
+.people-center .people-main > div {
+  position: relative;
+}
+.people-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: #000000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: none;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+.people-hover p:first-child {
+  padding-top: 90px;
+}
+.people-hover p:nth-child(2) {
+  opacity: 0.4;
+}
+.people-main > div:hover .people-hover {
+  display: block;
+}
+
+.send-mail {
+  display: flex;
+  justify-content: center;
+}
+.mail-center {
+  width: 840px;
+  height: 560px;
+  display: flex;
+  justify-content: space-around;
+}
+.mail-left {
+  width: 400px;
+  height: 420px;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  margin-top: 70px;
+  text-align: center;
+}
+.mail-left p {
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 300;
+  color: #141414;
+  line-height: 45px;
+}
+.mail-left input {
+  width: 300px;
+  height: 30px;
+  display: inline-block;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #eeeeee;
+}
+.mail-left textarea {
+  width: 300px;
+  height: 100px;
+  outline: none;
+  resize: none;
+  border: 1px solid #eeeeee;
+}
+.mail-left a {
+  display: inline-block;
+  width: 305px;
+  height: 40px;
+  line-height: 40px;
+  background: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.mail-right {
+  width: 300px;
+  margin-top: 80px;
+}
+.mail-right p {
+  font-size: 42px;
+  font-family: Montserrat;
+  font-weight: 200;
+  color: rgba(20, 20, 20, 1);
+  line-height: 40px;
+}
+.mail-right > span {
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 200;
+  color: rgba(20, 20, 20, 1);
+  line-height: 26px;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+.mail-right .address {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+.mail-right .address1 {
+  margin-top: 30px;
+}
+.mail-right .address img {
+  width: 20px;
+  height: 20px;
+  margin: 5px 10px 0 0;
+}
+.mail-right .address span {
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 300;
+  color: rgba(20, 20, 20, 1);
+  line-height: 26px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background: #000000;
+  font-size: 14px;
+}
+.footer .footer-center {
+  width: 960px;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-center ul {
+  padding: 0;
+}
+.footer-center ul li {
+  list-style: none;
+  line-height: 40px;
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.3;
+}
+.footer-center ul li:first-child {
+  font-family: Montserrat;
+  font-weight: 300;
+  color: #fff;
+  opacity: 1;
 }
