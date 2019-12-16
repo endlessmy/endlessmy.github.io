@@ -25,7 +25,7 @@ header > div > p {
 header > div > .mail {
   width: 960px;
   height: 200px;
-  border: 1px solid #eeeeee;
+  border: 1px solid #625b4d;
   border-radius: 2px;
   color: #ffffff;
 }
@@ -107,7 +107,8 @@ main .mobile > .info > p {
 }
 .file-center {
   height: 500px;
-  width: 70%;
+  flex: 1;
+  padding-left: 15%;
   display: flex;
   justify-content: space-between;
 }
