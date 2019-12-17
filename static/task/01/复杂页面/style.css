@@ -4,22 +4,23 @@ html {
   padding: 0;
 }
 .main {
-  height: 1020px;
+  min-height: 1020px;
+  position: relative;
 }
 .main .banner {
   width: 100px;
-  height: 1020px;
+  min-height: 1020px;
   float: left;
   background-color: #1d2531;
 }
 .main .detail {
   width: 250px;
-  height: 1020px;
+  min-height: 1020px;
   float: left;
   background: #222c3c;
 }
 .main .content {
-  height: 1020px;
+  min-height: 1020px;
   margin-left: 350px;
 }
 .banner {
@@ -319,27 +320,108 @@ html {
   margin-right: -4.3px;
 }
 .content .content-right .main-center ul {
-  margin: 20px 40px 20px 30px;
+  margin: 20px 40px 20px 20px;
   padding-left: 0;
-  min-height: 400px;
 }
 .content .content-right .main-center ul li {
   list-style: none;
-  min-height: 200px;
+  margin-bottom: 20px;
 }
-.content .content-right .main-center ul li .main-list {
-  min-height: 200px;
+.content .content-right .main-center ul li .main-list img {
+  vertical-align: top;
 }
 .content .content-right .main-center ul li .main-list .main-info {
-  width: 85%;
+  width: 90%;
   display: inline-block;
-  height: 80px;
+  margin-left: 5px;
 }
 .content .content-right .main-center ul li .main-list .main-info .name {
   font-size: 16px;
   color: #585d68;
+  font-weight: bold;
 }
 .content .content-right .main-center ul li .main-list .main-info .time {
   font-size: 14px;
   color: #7f8fa4;
+}
+.content .content-right .main-center ul li .main-list .main-info .main-detail {
+  font-size: 14px;
+  color: #585d68;
+  line-height: 19px;
+  margin-top: 5px;
+}
+.content .content-right .main-center ul li .main-list .main-info .main-detail .main-img {
+  margin-top: 15px;
+}
+.content .content-right .main-center ul li .main-list .main-info .main-detail .main-img .tu2 {
+  display: inline-block;
+  position: relative;
+}
+.content .content-right .main-center ul li .main-list .main-info .main-detail .main-img .tu2 .img-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  width: 50px;
+  height: 50px;
+  background: #7d7b7d;
+  text-align: center;
+  padding-top: 17px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+}
+.content .content-right .main-center ul li .main-list .main-info .main-detail .main-img .tu2:hover .img-hover {
+  display: block;
+}
+.content .content-right .main-center ul li .main-add {
+  height: 54px;
+  line-height: 54px;
+  border: solid 1px #dfe3e9;
+  border-radius: 4px;
+}
+.content .content-right .main-center ul li .main-add button {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #9fa9ba;
+}
+.content .content-right .main-center ul li .main-add span {
+  font-size: 14px;
+  color: #585d68;
+  line-height: 19px;
+  margin-left: 10px;
+  display: inline-block;
+  width: 85%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.content .content-right .main-center .base-line {
+  width: 100%;
+  display: table;
+}
+.content .content-right .main-center .base-line .line {
+  border-bottom: 1px solid #eeeeee;
+  top: -6px;
+  display: table-cell;
+  position: relative;
+}
+.content .content-right .main-center .base-line .text {
+  width: 50px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #7f8fa4;
+  display: table-cell;
+}
+.content .content-right .main-center .base-line .new-text {
+  width: 101px;
+  color: #2399f1;
+}
+.content .content-right .main-center .base-line .new-line {
+  border-color: #2399f1;
 }
