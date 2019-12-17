@@ -3,22 +3,22 @@ html {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
 .main {
-  display: table;
-  width: 100%;
+  display: flex;
 }
-.banner {
-  width: 100px;
+.main .banner {
+  flex: 0 0 100px;
   background-color: #1d2531;
-  display: table-cell;
 }
-.detail {
-  width: 250px;
+.main .detail {
+  flex: 0 0 250px;
   background: #222c3c;
-  display: table-cell;
 }
-.content {
-  display: table-cell;
+.main .content {
+  flex: 1;
 }
 .banner {
   padding: 20px;
@@ -95,6 +95,8 @@ html {
   list-style: none;
   font-size: 14px;
   line-height: 36px;
+}
+.detail .menu .menu-center ul li a {
   color: #b7c0cd;
 }
 .detail .menu .menu-center ul li img {
@@ -201,6 +203,7 @@ html {
   height: 939px;
   float: left;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .content .content-left .search {
   text-align: center;

@@ -3,25 +3,28 @@ html {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
 
 //弹性布局
-// .main {
-//   display: flex;
-//   .banner {
-//     flex: 0 0 100px;
-//     // height: 1020px;
-//     background-color: #1d2531;
-//   }
-//   .detail {
-//     flex: 0 0 250px;
-//     // height: 1020px;
-//     background: #222c3c;
-//   }
-//   .content {
-//     flex: 1;
-//     // height: 1020px;
-//   }
-// }
+.main {
+  display: flex;
+  .banner {
+    flex: 0 0 100px;
+    // height: 1020px;
+    background-color: #1d2531;
+  }
+  .detail {
+    flex: 0 0 250px;
+    // height: 1020px;
+    background: #222c3c;
+  }
+  .content {
+    flex: 1;
+    // height: 1020px;
+  }
+}
 
 //绝对定位布局
 // .main {
@@ -52,26 +55,23 @@ html {
 // }
 
 //table-cell布局
-.main {
-  display: table;
-  width: 100%;
-}
-.banner {
-  width: 100px;
-  // height: 1020px;
-  background-color: #1d2531;
-  display: table-cell;
-}
-.detail {
-  width: 250px;
-  // height: 1020px;
-  background: #222c3c;
-  display: table-cell;
-}
-.content {
-  // height: 1020px;
-  display: table-cell;
-}
+// .main {
+//   display: table;
+//   width: 100%;
+// }
+// .banner {
+//   width: 100px;
+//   background-color: #1d2531;
+//   display: table-cell;
+// }
+// .detail {
+//   width: 250px;
+//   background: #222c3c;
+//   display: table-cell;
+// }
+// .content {
+//   display: table-cell;
+// }
 
 //浮动布局
 // .main {
@@ -172,7 +172,10 @@ html {
           list-style: none;
           font-size: 14px;
           line-height: 36px;
-          color: #b7c0cd;
+
+          a {
+            color: #b7c0cd;
+          }
           img {
             width: 14px;
             height: 16px;
@@ -287,6 +290,7 @@ html {
     height: 939px;
     float: left;
     box-sizing: border-box;
+    overflow: hidden;
     .search {
       text-align: center;
       height: 70px;
