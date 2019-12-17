@@ -152,12 +152,10 @@ html {
   position: relative;
   .menu {
     border-bottom: 1px solid #2a3547;
+    margin-bottom: 15px;
     .menu-top {
       font-size: 12px;
-      font-weight: normal;
-      font-stretch: normal;
       line-height: 40px;
-      letter-spacing: 0px;
       color: #5b6779;
       .setting {
         float: right;
@@ -168,13 +166,11 @@ html {
       ul {
         vertical-align: top;
         padding-left: 0;
+        margin: 0;
         li {
           list-style: none;
           font-size: 14px;
-          font-weight: normal;
-          font-stretch: normal;
           line-height: 36px;
-          letter-spacing: 0px;
           color: #b7c0cd;
           img {
             width: 14px;
@@ -186,10 +182,7 @@ html {
             // display: inline-block;
             float: right;
             font-size: 14px;
-            font-weight: normal;
-            font-stretch: normal;
             line-height: 24px;
-            letter-spacing: 0px;
             color: #ffffff;
             width: 32px;
             height: 24px;
@@ -223,9 +216,6 @@ html {
     border: 1px solid red;
     span {
       font-size: 14px;
-      font-weight: normal;
-      font-stretch: normal;
-      letter-spacing: 0px;
       color: #ffffff;
     }
     .money {
@@ -245,23 +235,33 @@ html {
     // border: 1px solid #eeeeee;
     .message {
       font-size: 24px;
-      font-weight: normal;
-      font-stretch: normal;
       line-height: 50px;
-      letter-spacing: 0px;
       color: #354052;
     }
     .admin {
       float: right;
       width: 204px;
       height: 58px;
-      line-height: 58px;
+      // line-height: 58px;
       margin-top: 10px;
-      div {
+      .admin-name {
         display: inline-block;
+        line-height: 24px;
+        margin-left: 5px;
+        .name1 {
+          font-size: 16px;
+          color: #2399f1;
+        }
+        .name2 {
+          font-size: 14px;
+          color: #b5b5b5;
+        }
       }
-      .name {
+      .dropdown {
         vertical-align: top;
+        margin-top: 20px;
+        float: right;
+        line-height: 24px;
       }
     }
   }
@@ -295,6 +295,26 @@ html {
         position: relative;
         .info-top {
           margin-left: 20px;
+          .info-mseeage {
+            display: inline-block;
+            .info1 {
+            }
+            .info2 {
+              font-size: 16px;
+              color: #2399f1;
+              span {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                background-color: #00aaff;
+                border-radius: 8px;
+              }
+            }
+            .info3 {
+              font-size: 14px;
+              color: #b5b5b5;
+            }
+          }
           .leter {
             float: right;
             margin-right: 15px;
@@ -306,10 +326,7 @@ html {
         .info-detail {
           width: 80%;
           font-size: 14px;
-          font-weight: normal;
-          font-stretch: normal;
           line-height: 19px;
-          letter-spacing: 0px;
           color: #585d68;
           margin-left: 20px;
         }
@@ -356,13 +373,12 @@ html {
         height: 32px;
         // border: 1px solid red;
         .user-icon {
-          width: 120px;
+          width: 110px;
           border-right: 1px solid #eeeeee;
           line-height: 0;
           float: left;
-          button:nth-child(2) {
-            margin-top: -2px;
-          }
+          margin-top: 3px;
+
           button:nth-child(2),
           button:nth-child(3) {
             margin-left: -6px;
@@ -373,6 +389,46 @@ html {
           line-height: 0;
           width: 110px;
           margin-top: 15px;
+          margin-left: 10px;
+          span {
+            font-size: 14px;
+            color: #56688a;
+          }
+          .direction {
+            width: 50px;
+            float: right;
+            margin-top: -10px;
+            button:first-child {
+              margin-right: -4.3px;
+            }
+          }
+        }
+      }
+    }
+    .main-center {
+      ul {
+        margin: 20px 40px 20px 30px;
+        padding-left: 0;
+        min-height: 400px;
+        li {
+          list-style: none;
+          min-height: 200px;
+          .main-list {
+            min-height: 200px;
+            .main-info {
+              width: 85%;
+              display: inline-block;
+              height: 80px;
+              .name {
+                font-size: 16px;
+                color: #585d68;
+              }
+              .time {
+                font-size: 14px;
+                color: #7f8fa4;
+              }
+            }
+          }
         }
       }
     }

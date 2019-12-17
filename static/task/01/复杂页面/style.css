@@ -77,13 +77,11 @@ html {
 }
 .detail .menu {
   border-bottom: 1px solid #2a3547;
+  margin-bottom: 15px;
 }
 .detail .menu .menu-top {
   font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
   line-height: 40px;
-  letter-spacing: 0px;
   color: #5b6779;
 }
 .detail .menu .menu-top .setting {
@@ -93,14 +91,12 @@ html {
 .detail .menu .menu-center ul {
   vertical-align: top;
   padding-left: 0;
+  margin: 0;
 }
 .detail .menu .menu-center ul li {
   list-style: none;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
   line-height: 36px;
-  letter-spacing: 0px;
   color: #b7c0cd;
 }
 .detail .menu .menu-center ul li img {
@@ -112,10 +108,7 @@ html {
 .detail .menu .menu-center ul li .number {
   float: right;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
   line-height: 24px;
-  letter-spacing: 0px;
   color: #ffffff;
   width: 32px;
   height: 24px;
@@ -146,9 +139,6 @@ html {
 }
 .detail .detail-foot span {
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  letter-spacing: 0px;
   color: #ffffff;
 }
 .detail .detail-foot .money {
@@ -164,24 +154,33 @@ html {
 }
 .content .content-top .message {
   font-size: 24px;
-  font-weight: normal;
-  font-stretch: normal;
   line-height: 50px;
-  letter-spacing: 0px;
   color: #354052;
 }
 .content .content-top .admin {
   float: right;
   width: 204px;
   height: 58px;
-  line-height: 58px;
   margin-top: 10px;
 }
-.content .content-top .admin div {
+.content .content-top .admin .admin-name {
   display: inline-block;
+  line-height: 24px;
+  margin-left: 5px;
 }
-.content .content-top .admin .name {
+.content .content-top .admin .admin-name .name1 {
+  font-size: 16px;
+  color: #2399f1;
+}
+.content .content-top .admin .admin-name .name2 {
+  font-size: 14px;
+  color: #b5b5b5;
+}
+.content .content-top .admin .dropdown {
   vertical-align: top;
+  margin-top: 20px;
+  float: right;
+  line-height: 24px;
 }
 .content .content-left {
   width: 30%;
@@ -216,6 +215,24 @@ html {
 .content .content-left .info li .info-top {
   margin-left: 20px;
 }
+.content .content-left .info li .info-top .info-mseeage {
+  display: inline-block;
+}
+.content .content-left .info li .info-top .info-mseeage .info2 {
+  font-size: 16px;
+  color: #2399f1;
+}
+.content .content-left .info li .info-top .info-mseeage .info2 span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #00aaff;
+  border-radius: 8px;
+}
+.content .content-left .info li .info-top .info-mseeage .info3 {
+  font-size: 14px;
+  color: #b5b5b5;
+}
 .content .content-left .info li .info-top .leter {
   float: right;
   margin-right: 15px;
@@ -226,10 +243,7 @@ html {
 .content .content-left .info li .info-detail {
   width: 80%;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
   line-height: 19px;
-  letter-spacing: 0px;
   color: #585d68;
   margin-left: 20px;
 }
@@ -275,13 +289,11 @@ html {
   height: 32px;
 }
 .content .content-right .main-top .operate .user-icon {
-  width: 120px;
+  width: 110px;
   border-right: 1px solid #eeeeee;
   line-height: 0;
   float: left;
-}
-.content .content-right .main-top .operate .user-icon button:nth-child(2) {
-  margin-top: -2px;
+  margin-top: 3px;
 }
 .content .content-right .main-top .operate .user-icon button:nth-child(2),
 .content .content-right .main-top .operate .user-icon button:nth-child(3) {
@@ -292,4 +304,42 @@ html {
   line-height: 0;
   width: 110px;
   margin-top: 15px;
+  margin-left: 10px;
+}
+.content .content-right .main-top .operate .page span {
+  font-size: 14px;
+  color: #56688a;
+}
+.content .content-right .main-top .operate .page .direction {
+  width: 50px;
+  float: right;
+  margin-top: -10px;
+}
+.content .content-right .main-top .operate .page .direction button:first-child {
+  margin-right: -4.3px;
+}
+.content .content-right .main-center ul {
+  margin: 20px 40px 20px 30px;
+  padding-left: 0;
+  min-height: 400px;
+}
+.content .content-right .main-center ul li {
+  list-style: none;
+  min-height: 200px;
+}
+.content .content-right .main-center ul li .main-list {
+  min-height: 200px;
+}
+.content .content-right .main-center ul li .main-list .main-info {
+  width: 85%;
+  display: inline-block;
+  height: 80px;
+}
+.content .content-right .main-center ul li .main-list .main-info .name {
+  font-size: 16px;
+  color: #585d68;
+}
+.content .content-right .main-center ul li .main-list .main-info .time {
+  font-size: 14px;
+  color: #7f8fa4;
 }
