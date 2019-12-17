@@ -3,98 +3,98 @@ html {
   margin: 0;
   padding: 0;
 }
+
 //弹性布局
 // .main {
 //   display: flex;
 //   .banner {
 //     flex: 0 0 100px;
-//     height: 1020px;
+//     // height: 1020px;
+//     background-color: #1d2531;
 //   }
 //   .detail {
 //     flex: 0 0 250px;
-//     height: 1020px;
+//     // height: 1020px;
+//     background: #222c3c;
 //   }
 //   .content {
 //     flex: 1;
-//     height: 1020px;
+//     // height: 1020px;
 //   }
 // }
 
 //绝对定位布局
 // .main {
 //   position: relative;
-//   height: 1020px;
 //   .banner {
 //     width: 100px;
-//     height: 1020px;
 //     position: absolute;
 //     left: 0;
 //     top: 0;
+//     bottom: 0;
 //     background-color: #1d2531;
 //   }
 //   .detail {
 //     width: 250px;
-//     height: 1020px;
 //     position: absolute;
 //     left: 100px;
 //     top: 0;
-//     background: red;
+//     bottom: 0;
+//     background: #222c3c;
 //   }
 //   .content {
-//     height: 1020px;
 //     position: absolute;
 //     right: 0;
 //     top: 0;
+//     bottom: 0;
 //     left: 350px;
-//     background: green;
 //   }
 // }
 
 //table-cell布局
-// .main {
-//   display: table;
-//   width: 100%;
-// }
-// .banner {
-//   width: 100px;
-//   height: 1020px;
-//   background-color: #1d2531;
-//   display: table-cell;
-// }
-// .detail {
-//   width: 250px;
-//   height: 1020px;
-//   background: red;
-//   display: table-cell;
-// }
-// .content {
-//   height: 1020px;
-//   display: table-cell;
-//   background: green;
-// }
+.main {
+  display: table;
+  width: 100%;
+}
+.banner {
+  width: 100px;
+  // height: 1020px;
+  background-color: #1d2531;
+  display: table-cell;
+}
+.detail {
+  width: 250px;
+  // height: 1020px;
+  background: #222c3c;
+  display: table-cell;
+}
+.content {
+  // height: 1020px;
+  display: table-cell;
+}
 
 //浮动布局
-.main {
-  min-height: 1020px;
-  position: relative;
-  .banner {
-    width: 100px;
-    min-height: 1020px;
-    float: left;
-    background-color: #1d2531;
-  }
-  .detail {
-    width: 250px;
-    min-height: 1020px;
-    float: left;
-    background: #222c3c;
-  }
-  .content {
-    min-height: 1020px;
-    margin-left: 350px;
-    // background: #eeeeee;
-  }
-}
+// .main {
+//   min-height: 1020px;
+//   position: relative;
+//   .banner {
+//     width: 100px;
+//     min-height: 1020px;
+//     float: left;
+//     background-color: #1d2531;
+//   }
+//   .detail {
+//     width: 250px;
+//     min-height: 1020px;
+//     float: left;
+//     background: #222c3c;
+//   }
+//   .content {
+//     min-height: 1020px;
+//     margin-left: 350px;
+//     // background: #eeeeee;
+//   }
+// }
 
 .banner {
   padding: 20px;
@@ -209,18 +209,34 @@ html {
   }
   .detail-foot {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 0;
     left: 30px;
     height: 40px;
     width: 190px;
-    border: 1px solid red;
     span {
       font-size: 14px;
       color: #ffffff;
     }
     .money {
       margin-left: 7px;
+    }
+    .detail-line {
+      width: 190px;
+      height: 8px;
+      margin-top: 5px;
+      background: #475364;
+      border-radius: 5px;
+      position: relative;
+      div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 40px;
+        height: 8px;
+        border-radius: 5px;
+        background: #7f5be6;
+      }
     }
   }
 }
@@ -271,7 +287,6 @@ html {
     height: 939px;
     float: left;
     box-sizing: border-box;
-    border-right: 1px solid #eeeeee;
     .search {
       text-align: center;
       height: 70px;
@@ -287,7 +302,7 @@ html {
       }
     }
     .info {
-      // padding: 0 20px;
+      margin: 0;
       padding-left: 0;
       li {
         list-style: none;
@@ -295,11 +310,9 @@ html {
         border-bottom: 1px solid #eeeeee;
         position: relative;
         .info-top {
-          margin-left: 20px;
+          margin: 15px 0 5px 15px;
           .info-mseeage {
             display: inline-block;
-            .info1 {
-            }
             .info2 {
               font-size: 16px;
               color: #2399f1;
@@ -310,6 +323,9 @@ html {
                 background-color: #00aaff;
                 border-radius: 8px;
               }
+            }
+            .info-text {
+              color: #585d68;
             }
             .info3 {
               font-size: 14px;
@@ -347,8 +363,9 @@ html {
     }
   }
   .content-right {
-    width: 70%;
+    width: 69%;
     float: left;
+    border-left: 1px solid #eeeeee;
     .main-top {
       height: 70px;
       line-height: 70px;
