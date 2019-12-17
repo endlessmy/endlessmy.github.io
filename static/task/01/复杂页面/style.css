@@ -315,6 +315,7 @@ a {
   line-height: 0;
   float: left;
   margin-top: 3px;
+  border-radius: 5px;
 }
 .content .content-right .main-top .operate .user-icon button:nth-child(2),
 .content .content-right .main-top .operate .user-icon button:nth-child(3) {
@@ -337,7 +338,7 @@ a {
   margin-top: -10px;
 }
 .content .content-right .main-top .operate .page .direction button:first-child {
-  margin-right: -4.3px;
+  margin-right: -5px;
 }
 .content .content-right .main-center ul {
   margin: 20px 40px 20px 20px;
