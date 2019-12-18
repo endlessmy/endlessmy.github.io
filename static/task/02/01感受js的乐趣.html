@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="first-number" type="number" value="0" placeholder="第一个数字" />
+    <input
+      id="second-number"
+      type="number"
+      value="0"
+      placeholder="第二个数字"
+    />
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果：</p>
+
+    <script>
+      var add = document.getElementById("add-btn"); //加
+      var minus = document.getElementById("minus-btn"); //减
+      var times = document.getElementById("times-btn"); //乘
+      var divide = document.getElementById("divide-btn"); //除
+      var result = document.getElementById("result"); //结果
+      var first_number = document.getElementById("first-number"); //第一个数字
+      var second_number = document.getElementById("second-number"); //第二个数字
+
+      add.onclick = function() {
+        var res = parseInt(first_number.value) + parseInt(second_number.value);
+        result.innerText = "运算结果：" + res;
+      };
+
+      minus.onclick = function() {
+        var res = Number(first_number.value) - Number(second_number.value);
+        result.innerText = "运算结果：" + res;
+      };
+
+      times.onclick = function() {
+        var res = Number(first_number.value) * Number(second_number.value);
+        result.innerText = "运算结果：" + res;
+      };
+
+      divide.onclick = function() {
+        var res = Number(first_number.value) / Number(second_number.value);
+        result.innerText = "运算结果：" + res;
+      };
+    </script>
+  </body>
+</html>
